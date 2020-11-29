@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: @spring.profiles.active@
+  servlet:
+    multipart:
+      max-file-size: 50MB
+
+server:
+  port: 8080
+  error:
+    include-message: always
+    include-binding-errors: always
+
+app:
+  datasource:
+    jdbc-url: jdbc:postgresql://localhost:5432/student
+    username: postgres
+    password: password
+    pool-size: 30
